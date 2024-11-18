@@ -1,0 +1,6 @@
+[submodule "MyChronicleApp"]
+	path = MyChronicleApp
+	url = https://github.com/MyChronicleProject/MyChronicleApp.git
+[submodule "MyChronicleClient"]
+	path = MyChronicleClient
+	url = https://github.com/MyChronicleProject/MyChronicleClient.git
