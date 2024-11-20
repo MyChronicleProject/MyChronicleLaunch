@@ -1,0 +1,14 @@
+services:
+  api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RUNNING_IN_CONTAINER=true
+      - DOCKER_CONNECTION_STRING=Server=mysql;Database=MyChronicleDatabase;User Id=${MYSQL_USER};Password=${MYSQL_PASSWORD};
+    ports:
+      - "5000:8080"  # Expose a different port for development
+  client:
+    build:
+      context: ./MyChronicleClient
+      dockerfile: Dockerfile.dev  # Specify a different Dockerfile for development
+    ports:
+      - "3001:3000"  # Expose a different port for development
