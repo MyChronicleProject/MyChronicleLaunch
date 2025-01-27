@@ -4,3 +4,4 @@
 [submodule "MyChronicleClient"]
 	path = MyChronicleClient
 	url = https://github.com/MyChronicleProject/MyChronicleClient.git
+	branch = stylView

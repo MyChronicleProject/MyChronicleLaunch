@@ -16,5 +16,5 @@ docker compose up --build
 
 Run for porduction:
 ```
-docker-compose -f docker-compose.yaml up --build
+docker compose -f docker-compose.yaml up --build
 ```
